@@ -1,0 +1,27 @@
+
+
+body {
+    color: darkslategray;
+    background-color: deepskyblue;
+    text-align: center;
+    max-width: 400px;
+    margin: 20% auto 0;
+    padding: 0 10%;
+}
+
+.card {
+    background-color: snow;
+    padding: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double black;
+    color: white;
+    text-align: center;
+    height: 5px;
+  }
+
+  ul  {
+    text-align: left;
+  }
