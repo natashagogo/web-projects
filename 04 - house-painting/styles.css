@@ -1,123 +1,55 @@
 * {
     box-sizing: border-box;
   }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(palevioletred, indianred, maroon);
+
+  :root {
+    --primary-color: hotpink;
+    --secondary-color: turquoise;
+    --secondary-color-dark: darkturquoise;
+
+    --light: mistyrose;
+    --shadow: midnightblue;
+
+    --sky: linear-gradient(palevioletred, indianred, maroon);
+    --sand: linear-gradient(sandybrown, lightcoral, salmon);
+
+    --tin: repeating-linear-gradient(to right, var(--secondary-color) 5%, var(--secondary-color-dark) 15%);
+    --metal: repeating-linear-gradient(45deg, darkturquoise 10%, turquoise 12%);
+
+    --standard: 400px;
+    --half: calc(var(--standard) / 2);
+    --third: calc(var(--standard) / 3);
+    --quarter: calc(var(--standard) / 4);
   }
   
-  #house {
-    margin: 40% auto;
-    position: relative;
-    width: 500px;
-    height: 400px;
-    background-color: hotpink;
-    border-bottom: 5px solid indianred;
-  }
   
-  #chimney,
-  #roof,
-  #window-1,
-  #window-2,
-  #door,
-  #step-1,
-  #step-2,
-  #step-3,
-  #ground {
-    position: absolute;
-  }
-  
-  #roof {
-    top: 0;
-    width: 100%;
-    height: 25%;
-    background: repeating-linear-gradient(to right, turquoise 5%, darkturquoise 15%);
-    border: 5px solid transparent;
-  
-  }
-  
-  #chimney {
-    top: -120px;
-    right: 30px;
-    background-color: darkturquoise;
-    border-left: 120px solid transparent;
-    border-bottom: 120px solid midnightblue;
-    width: 90px;
-    height: 100px;
-  }
-  
-  #window-1 {
-    top: 125px;
-    left: 90px;
-    width: 100px;
-    height: 100px;
-    top: 135px;
-    left: 10px;
-    width: 50%;
-    height: 55%;
-    background-color: mistyrose;
-    border-top: 120px solid midnightblue;
-    border-left: 3px dotted dodgerblue;
-    border-bottom: 15px solid darkturquoise;
-  }
-  
-  #window-2 {
-    top: 120px;
-    left: 70%;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: mistyrose;
-    border: 5px solid darkturquoise;
-  }
-  
-  #door {
-    left: 70%;
-    bottom: 0;
-    width: 100px;
-    height: 40%;
-    background: repeating-linear-gradient(45deg, darkturquoise 10%, turquoise 12%);
-    border: 5px solid transparent;
-  }
-  
-  #handle {
-    width: 10px;
-    height: 50px;
-    background-color: mistyrose;
-    margin-top: 50%;
-    margin-left: 80%;
-  }
-  
-  #step-1 {
-    top: 98%;
-    left: 70%;
-    width: 20%;
-    height: 20px;
-    background-color: indianred;
-  }
-  
-  #step-2 {
-    top: 101%;
-    left: 65%;
-    width: 30%;
-    height: 20px;
-    background-color: palevioletred;
-  }
-  
-  #step-3 {
-    top: 105%;
-    left: 60%;
-    width: 40%;
-    height: 20px;
-    background-color: lightcoral;
-  }
-  
-  #ground {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(sandybrown, lightcoral, salmon);
-    z-index: -1;
-    top: 80%;
-  }
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 10%;
+}
+
+body div {
+  margin: 0 auto;
+}
+
+.a-frame {
+
+  width: var(--standard);
+  height: var(--standard);
+  border-right: var(--half) solid transparent;
+  border-left: var(--half) solid transparent;
+  border-bottom: var(--standard) solid var(--primary-color);
+}
+
+.window-1 {
+   border-left: var(--quarter) solid transparent;
+   border-right: var(--quarter) solid transparent;
+   border-bottom: var(--half) solid var(--light);
+
+   position: relative;
+   top: var(--third);
+   right: var(--quarter);
+
+   
+}
