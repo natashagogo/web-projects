@@ -21,17 +21,6 @@ main div {
     height: 380px;
 }
 
-#jorge-luis-borges {
-    position: relative;
-    background: linear-gradient(
-        rgba(200, 0, 120, 0.7) 50%, 
-        rgb(120, 0, 120) 50%,
-        rgb(30, 0, 80) 55%,
-        rgb(120, 0, 100) 60%,
-        rgba(245, 0, 80, 0.8) 55%
-    );
-}
-
 .very-short-intros p {
     position: relative;
     color: white;
@@ -64,6 +53,35 @@ main div {
 
 .very-short-intros .publisher {
     top: 75%;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+/* BOOKS */
+
+#the-epic {
+    background:
+        linear-gradient(
+        rgba(0, 75, 255) 50%,
+        rgb(255, 160, 60) 50%, 
+        rgb(255, 160, 60) 55%,
+        rgba(0, 150, 100) 55%,
+        rgba(0, 200, 150) 65%,
+        rgb(0, 150, 90)
+    );
+}
+
+#jorge-luis-borges {
+    position: relative;
+    background: linear-gradient(
+        rgba(200, 0, 120, 0.7) 50%, 
+        rgb(120, 0, 120) 50%,
+        rgb(30, 0, 80) 55%,
+        rgb(120, 0, 100) 60%,
+        rgba(245, 0, 80, 0.8) 55%
+    );
 }
 
 #midnight-timetable {
