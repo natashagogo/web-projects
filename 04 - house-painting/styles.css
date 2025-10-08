@@ -15,41 +15,67 @@
 
     --tin: repeating-linear-gradient(to right, var(--secondary-color) 5%, var(--secondary-color-dark) 15%);
     --metal: repeating-linear-gradient(45deg, darkturquoise 10%, turquoise 12%);
+    --wooden-panels: repeating-linear-gradient(lightcoral 0%, indianred 10%);
 
-    --standard: 400px;
-    --half: calc(var(--standard) / 2);
-    --third: calc(var(--standard) / 3);
-    --quarter: calc(var(--standard) / 4);
+    --large: 300px;
+    --medium: 200px;
+
   }
-  
-  
-body {
-  margin: 0;
+
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+ #canvas {
+  width: 100%;
   height: 100vh;
+  background-color: midnightblue;
   padding: 10%;
-}
+ }
 
-body div {
-  margin: 0 auto;
-}
+  /* House Shapes */
 
-.a-frame {
+ .circle {
+  border-radius: 50%;
+ } 
 
-  width: var(--standard);
-  height: var(--standard);
-  border-right: var(--half) solid transparent;
-  border-left: var(--half) solid transparent;
-  border-bottom: var(--standard) solid var(--primary-color);
-}
+ .triangle,
+ .base {
+  position: relative;
+ }
 
-.window-1 {
-   border-left: var(--quarter) solid transparent;
-   border-right: var(--quarter) solid transparent;
-   border-bottom: var(--half) solid var(--light);
+ .triangle {
+  width: var(--large);
+  border-left: calc(var(--large) / 2) solid transparent;
+  border-right: calc(var(--large) / 2) solid transparent;
+  border-bottom: var(--large) solid indianred;
+  top: 225px;
+  z-index: 2;
+ }
 
-   position: relative;
-   top: var(--third);
-   right: var(--quarter);
+ .base {
+    background: var(--wooden-panels);
+    height: 225px;
+    width: 80%;
+    min-width: 500px;
+    left: 150px;
+  }
 
-   
-}
+  .window {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    z-index: 3;
+
+    border-left: calc(var(--medium) / 2) solid transparent;
+    border-right: calc(var(--medium) / 2)  solid transparent;
+    border-bottom: var(--medium) solid burlywood;
+  }
+
+  /* Properties */
+
+  .rounded {
+    border-radius: 1% 1% 50% 50%;
+  }
