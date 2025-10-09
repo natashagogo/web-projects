@@ -7,11 +7,51 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="canvas">
-            <div class="triangle">
-                <div class="window"></div>
-            </div>
-            <div class="base"></div>
-        </div>
+        <!--
+        TO LEARN
+
+        Figure out how to create gradient borders.
+        Here are two resources: 
+        
+        https://css-tricks.com/gradient-borders-in-css/
+
+        https://vinish.dev/css-gradient-border
+    
+        Create polygons using border hacks.
+
+        How do you inset one shape in another?
+
+        -->
+        <main>
+            <section>
+                <h2>Playground</h2>
+                <div id="house">
+                    <div id="base" class="triangle equal"></div>
+                    <div id="a-frame" class="triangle equal"></div>
+                    <div id="a-frame-window" class="triangle window"></div>
+                </div>
+            </section>
+            <section>
+                <h2>Frames</h2>
+                <div class="triangle equal"></div>
+                <div class="triangle left"></div>
+                <div class="triangle right"></div>
+                <div class="triangle window"></div>
+            </section>
+            <section>
+                <h2>Doors</h2>
+                <!-- Method 1-->
+                <div class="door blinds"></div>
+
+                <!-- Method 2-->
+
+                <div class="door">
+                    <div class="window-rectangular"></div>
+                    <div class="window-rectangular"></div>
+                    <div class="window-rectangular"></div>
+                    <div class="window-rectangular"></div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
