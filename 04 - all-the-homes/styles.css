@@ -26,8 +26,11 @@
     text-align: center;
   }
 
-  body div {
-    margin: 15px auto;
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
   }
 
   /* DEMOS */
@@ -36,6 +39,11 @@
     background: linear-gradient(indianred 60%, rosybrown 50%);
     width: 95%;
     height: 600px;
+    margin: 15px auto;
+  }
+
+  #house div {
+    margin: 15px auto;
   }
 
   #base {
