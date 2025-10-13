@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:thistle;
+    height: 100vh;
+}
+
+.hero {
+    width: 100px;
+    height: 100px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid crimson;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    z-index: -1;
+}
+
+.tree-left {
+    width: 25%;
+    height: 150%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tree-falling {
+    width: 10%;
+    height: 85%;
+    background-color: black;
+    position: absolute;
+    top: -10%;
+    left: 35%;
+    transform: rotate(-20deg)
+}
+
+.tree-middle {
+    width: 5%;
+    height: 60%;
+    background-color: black;
+    position: absolute;
+    left: 55%;
+    transform: rotate(-2deg);
+}
+
+.tree-right {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    right: 10%;
+    transform: rotate(-3deg);
+    top: -5px;
+}
+
+.tree-top {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    transform: rotate(120deg);
+}
+
+/*
+
+TO DO:
+
+Try again. There are too many magic numbers here.
+*/
+
+.wolf {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+.wolf .ear {
+    width: 10%;
+    height: 40%;
+    border-left: 20px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+    position: relative;
+    left: 85%;
+    top: -50px;
+    transform: rotate(-35deg);
+}
+
+.wolf .head-top {
+    width: 30%;
+    height: 100%;
+    border-left: 70px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 500px solid black;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: rotate(-100deg);
+    z-index: 2;
+}
+
+.wolf .eye-left {
+    width: 50px;
+    position: relative;
+    top: 261px;
+    border-bottom: 30px solid crimson;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    z-index: 3;
+}
+
+.wolf .eye-right {
+    width: 50px;
+    position: relative;
+    top: 260px;
+    border-bottom: 100px solid crimson;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    z-index: 3;
+    transform: rotate(-180deg);
+}
+
+.tongue {
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    left: 65%;
+    top: 70%;
+    z-index: 1;
+    transform: rotate(140deg);
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid crimson;
+    border-top: 300px solid transparent;
+    border-radius: 50%;
+}
+
+.wolf .head-bottom {
+    width: 30%;
+    height: 100%;
+    border-left:100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 500px solid black;
+    position: relative;
+    top: -130%;
+    left: 50%;
+    transform: rotate(-110deg);
+    z-index: 0;
+}
