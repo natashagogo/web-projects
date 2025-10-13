@@ -4,20 +4,24 @@
     margin: 0;
 }
 
+body {
+    background: rosybrown;
+}
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: pink;
+    background-color: teal;
     margin-bottom: 15px;
+    color: antiquewhite
 }
 
 #gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
     gap: 10px;
 }
 
@@ -25,4 +29,84 @@ header {
     width: 350px;
     height: 350px;
     background-color: teal;
+}
+
+.one,
+.two,
+.three,
+.four {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#gallery div {
+    background-color: antiquewhite;
+}
+
+/* PATTERNS */
+
+.one {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "first second third"
+        "fourth fourth fifth"
+        "fourth fourth sixth"
+        "seventh eighth ninth";
+}
+
+.two {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "first second third fourth"
+        "fifth sixth sixth seventh"
+        "eighth sixth sixth ninth";
+}
+
+.three {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "first second second third"
+        "fourth fifth fifth sixth"
+        "fourth fifth fifth sixth"
+        "seventh eighth eighth ninth";
+}
+
+.four {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "first first first second"
+    "third fourth fourth second"
+    "third fourth fourth fifth"
+    "sixth sixth sixth fifth"
+
+        
+}
+
+.pattern div:first-child {
+    grid-area: first;
+}
+
+.pattern div:nth-child(2) {
+    grid-area: second;
+}
+
+.pattern div:nth-child(3) {
+    grid-area: third;
+}
+
+.pattern div:nth-child(4) {
+    grid-area: fourth;
+}
+
+.pattern div:nth-child(5) {
+    grid-area: fifth;
+}
+
+.pattern div:nth-child(6) {
+    grid-area: sixth;
+}
+
+.pattern div:nth-child(8) {
+    grid-area: eighth;
 }
