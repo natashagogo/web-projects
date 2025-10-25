@@ -1,27 +1,31 @@
-
-
 body {
-    color: darkslategray;
-    background-color: deepskyblue;
-    text-align: center;
-    max-width: 400px;
-    margin: 20% auto 0;
-    padding: 0 10%;
+  background: repeating-radial-gradient(
+    circle at 100%,
+    skyblue,
+    deepskyblue 10px,
+    cornflowerblue 15px,
+    snow 15px,
+    snow 25px
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card {
-    background-color: snow;
-    padding: 25px;
+main {
+  background-color: snow;
+  padding: 20px;
+  width: 80%;
 }
 
-hr {
-    border: none;
-    border-top: 3px double black;
-    color: white;
-    text-align: center;
-    height: 5px;
-  }
+h1, 
+h2 {
+  text-align: center;
+}
 
-  ul  {
-    text-align: left;
+@media (min-width: 680px) {
+  main {
+    width: 40%;
   }
+}
