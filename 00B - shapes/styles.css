@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: snow;
+}
+
+#gallery div {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.square {
+    background-color:darkturquoise;
+}
+
+.diamond {
+    background-color:deepskyblue;
+    transform: rotate(45deg);
+}
+
+.circle {
+    border-radius: 50%;
+    background-color:moccasin;
+}
+
+.leaf {
+    border-radius: 100% 0% 100% 0%;
+    background-color: teal;
+}
+
+/*** TRIANGLES ***/
+
+
+.equilateral-triangle {
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid indianred;
+}
+
+.equilateral-triangle-flip {
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid darkred;
+}
+
+.right-triangle-right{
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid darkgoldenrod;
+}
+
+.right-triangle-left {
+    border-left: 200px solid transparent;
+    border-bottom: 200px solid brown;
+}
+
+.right-triangle-top-left{
+    border-top: 200px solid burlywood;
+    border-right: 200px solid transparent;
+}
+
+.right-triangle-top-right{
+    border-top: 200px solid moccasin;
+    border-left: 200px solid transparent;
+}
+
+/*
+
+Clip-path specifies x and y coordinates in the following order:
+
+top-left, top-right, bottom-right, bottom-left
+
+Start with a basic rectangular shape and customize to get the desired output::after
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+*/
+
+.triangle {
+    background-color: teal;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
+}
+
+.hexagon {
+    background-color: teal;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
